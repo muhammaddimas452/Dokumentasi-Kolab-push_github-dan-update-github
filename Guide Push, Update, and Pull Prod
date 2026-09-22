@@ -1,3 +1,56 @@
+# Cara Mengunggah (Push) Proyek Baru ke GitHub
+
+Jika Anda memiliki proyek baru di komputer lokal dan ingin mengunggahnya ke repositori GitHub untuk pertama kali, ikuti langkah-langkah berikut.
+
+## Prasyarat
+1. Pastikan Anda sudah membuat repositori baru yang kosong di situs GitHub.
+2. Salin URL repositori tersebut (misalnya: `https://github.com`).
+
+## Langkah-Langkah
+
+1. **Buka Terminal / Command Prompt**  
+   Masuk ke dalam folder proyek lokal Anda:
+   ```bash
+   cd nama-folder-proyek
+   ```
+
+2. **Inisialisasi Git**  
+   Aktifkan Git di dalam folder proyek tersebut:
+   ```bash
+   git init
+   ```
+
+3. **Tambahkan File ke Staging Area**  
+   Pilih semua file dalam folder untuk didaftarkan ke Git:
+   ```bash
+   git add .
+   ```
+
+4. **Lakukan Commit Pertama**  
+   Simpan perubahan pertama Anda dengan pesan:
+   ```bash
+   git commit -m "First commit / Inisialisasi proyek"
+   ```
+
+5. **Tentukan Branch Utama**  
+   Ubah nama *branch* utama menjadi `main` (standar GitHub saat ini):
+   ```bash
+   git branch -M main
+   ```
+
+6. **Hubungkan dengan Repositori GitHub**  
+   Sambungkan folder lokal Anda dengan URL repositori GitHub yang sudah dibuat tadi:
+   ```bash
+   git remote add origin https://github.com
+   ```
+
+7. **Unggah Proyek (Push)**  
+   Kirim seluruh kode proyek Anda ke GitHub untuk pertama kalinya:
+   ```bash
+   git push -u origin main
+   ```
+   > **Catatan:** Parameter `-u` berfungsi untuk mengingat *branch* tujuan, sehingga untuk *push* berikutnya Anda cukup mengetik `git push`.
+
 # Panduan Update Proyek ke GitHub
 
 Berikut adalah langkah-langkah untuk memperbarui (*update*) proyek Anda dari komputer lokal ke repositori GitHub menggunakan Git.
@@ -30,6 +83,7 @@ Berikut adalah langkah-langkah untuk memperbarui (*update*) proyek Anda dari kom
    ```bash
    git commit -m "Tuliskan pesan penjelasan update di sini"
    ```
+   > **Catatan:** Gunakan format Commit yang jelas: Contohnya menggunakan konvensi Conventional Commits seperti `feat: ...` (fitur baru), `fix: ...` (perbaikan bug), atau `style: ...` (perubahan CSS).
 
 6. **Unggah ke GitHub (Push)**  
    Kirimkan perubahan dari komputer lokal ke repositori online GitHub Anda:
