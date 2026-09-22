@@ -39,11 +39,11 @@ Berikut adalah langkah-langkah untuk memperbarui (*update*) proyek Anda dari kom
    > **Catatan:** Ganti `main` dengan `master` jika repositori Anda masih menggunakan nama *branch* utama yang lama.
 
 
-## Cara Mengambil Update dari GitHub ke Komputer Lokal
+# Cara Mengambil Update dari GitHub ke Komputer Lokal
 
 Jika ada perubahan di repositori GitHub (misalnya karena perubahan langsung di web GitHub atau ada *developer* lain yang melakukan *push*), Anda harus menarik perubahan tersebut ke komputer lokal agar proyek Anda tetap *up-to-date*.
 
-### Langkah-Langkah
+## Langkah-Langkah
 
 1. **Buka Terminal / Command Prompt**  
    Pastikan Anda sudah berada di dalam folder proyek Anda:
@@ -64,7 +64,7 @@ Jika ada perubahan di repositori GitHub (misalnya karena perubahan langsung di w
    ```
    > **Catatan:** Ganti `main` dengan nama *branch* yang sesuai jika Anda bekerja di *branch* lain.
 
-### Tips Tambahan: Hanya Cek Perubahan (Fetch)
+## Tips Tambahan: Hanya Cek Perubahan (Fetch)
 Jika Anda hanya ingin mengecek apakah ada update di GitHub tanpa langsung menggabungkannya ke file lokal, gunakan perintah:
 ```bash
 git fetch origin
