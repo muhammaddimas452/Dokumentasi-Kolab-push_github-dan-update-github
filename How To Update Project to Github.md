@@ -37,3 +37,36 @@ Berikut adalah langkah-langkah untuk memperbarui (*update*) proyek Anda dari kom
    git push origin main
    ```
    > **Catatan:** Ganti `main` dengan `master` jika repositori Anda masih menggunakan nama *branch* utama yang lama.
+
+
+## Cara Mengambil Update dari GitHub ke Komputer Lokal
+
+Jika ada perubahan di repositori GitHub (misalnya karena perubahan langsung di web GitHub atau ada *developer* lain yang melakukan *push*), Anda harus menarik perubahan tersebut ke komputer lokal agar proyek Anda tetap *up-to-date*.
+
+### Langkah-Langkah
+
+1. **Buka Terminal / Command Prompt**  
+   Pastikan Anda sudah berada di dalam folder proyek Anda:
+   ```bash
+   cd nama-folder-proyek
+   ```
+
+2. **Periksa Branch Aktif**  
+   Pastikan Anda berada di *branch* yang sama dengan yang ada di GitHub (biasanya `main` atau `master`):
+   ```bash
+   git branch
+   ```
+
+3. **Tarik Pembaruan (Pull)**  
+   Jalankan perintah berikut untuk mengambil dan menggabungkan langsung perubahan terbaru ke proyek lokal Anda:
+   ```bash
+   git pull origin main
+   ```
+   > **Catatan:** Ganti `main` dengan nama *branch* yang sesuai jika Anda bekerja di *branch* lain.
+
+### Tips Tambahan: Hanya Cek Perubahan (Fetch)
+Jika Anda hanya ingin mengecek apakah ada update di GitHub tanpa langsung menggabungkannya ke file lokal, gunakan perintah:
+```bash
+git fetch origin
+```
+
